@@ -3,7 +3,7 @@
 This plugin basically runs the following commands:
 
 ```bash
-$ buffalo new coke -f; cd coke; buffalo db drop -d; buffalo db create -d;
+$ buffalo new <app-name> -f; cd <app-name>; buffalo db drop -d; buffalo db create -d;
 ```
 
 ## Installation
@@ -15,7 +15,7 @@ $ go get -u -v github.com/markbates/buffalo-trash
 ## Usage
 
 ```bash
-$ buffalo trash coke
+$ buffalo trash <app-name>
 ```
 
 **NOTE**: You must **NOT** be in your project directory when you run this. You should be directly above it.
@@ -24,8 +24,8 @@ $ buffalo trash coke
 $ pwd
 $GOPATH/src/github.com/markbates
 
-$ ls -la | rg coke
-drwxr-xr-x   26 markbates  staff       832 Apr  4 14:57 coke
+$ ls -la | rg <app-name>
+drwxr-xr-x   26 markbates  staff       832 Apr  4 14:57 <app-name>
 ```
 
 ### Options
@@ -33,6 +33,6 @@ drwxr-xr-x   26 markbates  staff       832 Apr  4 14:57 coke
 You can pass in all of the same options you can pass to `buffalo new`.
 
 ```bash
-$ buffalo trash coke --db-type=mysql --api
+$ buffalo trash <app-name> --db-type=mysql --api
 ```
 
