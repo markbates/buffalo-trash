@@ -44,6 +44,11 @@ var trashCmd = &cobra.Command{
 
 		app := meta.New(filepath.Join(pwd, string(name)))
 
+		// it's not using pop, so that's it. nothing to see here. move along.
+		if !app.WithPop {
+			return nil
+		}
+
 		err = os.Chdir(app.Root)
 		if err != nil {
 			return errors.WithStack(err)
