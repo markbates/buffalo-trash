@@ -25,12 +25,14 @@ var trashCmd = &cobra.Command{
 		if len(args) == 0 {
 			return errors.New("you must pass the name of the app to recreate")
 		}
-		nargs := []string{"new"}
-		if len(args) > 1 {
-			nargs = append(nargs, args[1:]...)
-		}
 
 		name = inflect.Name(args[0])
+
+		nargs := []string{"new"}
+
+		if len(args) > 1 {
+			nargs = append(nargs, args[:len(args)]...)
+		}
 
 		nargs = append(nargs, "-f", string(name))
 		if err := run("buffalo", nargs...); err != nil {
