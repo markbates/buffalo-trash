@@ -1,0 +1,25 @@
+# github.com/gobuffalo/buffalo v0.12.4
+github.com/gobuffalo/buffalo/meta
+# github.com/gobuffalo/buffalo-plugins v0.0.0-20180812201729-80d79f93229e
+github.com/gobuffalo/buffalo-plugins/plugins
+# github.com/gobuffalo/envy v1.6.3
+github.com/gobuffalo/envy
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/joho/godotenv v1.2.0
+github.com/joho/godotenv
+# github.com/markbates/inflect v1.0.0
+github.com/markbates/inflect
+# github.com/pkg/errors v0.8.0
+github.com/pkg/errors
+# github.com/sirupsen/logrus v1.0.6
+github.com/sirupsen/logrus
+# github.com/spf13/cobra v0.0.3
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.2
+github.com/spf13/pflag
+# golang.org/x/crypto v0.0.0-20180808211826-de0752318171
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/sys v0.0.0-20180810173357-98c5dad5d1a0
+golang.org/x/sys/unix
+golang.org/x/sys/windows
